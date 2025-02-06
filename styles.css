@@ -1,69 +1,42 @@
-/* Reset default margins and paddings */
-* {
+/* Ensure body and html take up full height and remove margin */
+html, body {
+    height: 100%;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
-/* Body and font styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
-    text-align: center;
-}
-
-/* Header styling */
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-}
-
-/* Image gallery container */
-.image-gallery {
-    display: flex;
+/* Set up slideshow container */
+#slideshow {
+    position: relative;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
-    width: 100%;
-    margin-top: 20px;
-    justify-content: center;
-    align-items: center;
 }
 
-/* Individual image slide */
-.image-slide {
+/* Set all images to fill the entire screen */
+.slide {
+    position: absolute;
     width: 100%;
-    display: none; /* Start with all images hidden */
+    height: 100%;
+    object-fit: cover; /* Make images cover the screen without distortion */
+    opacity: 0; /* Start with images hidden */
     transition: opacity 1s ease-in-out;
 }
 
-/* Style for images */
-.gallery-image {
-    width: 80%;
-    max-width: 800px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+/* When the slide is active, make it visible */
+.slide.active {
+    opacity: 1;
 }
 
-/* Footer styling */
 footer {
-    background-color: #333;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
     color: white;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    font-size: 18px;
 }
 
-/* Transition effect for fading in/out images */
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    50% { opacity: 1; }
-    100% { opacity: 0; }
+footer a {
+    color: lightblue;
 }
 
-/* Adding the fading effect to the images */
-.image-slide.active {
-    display: block;
-    animation: fadeIn 3s infinite;
-}
+/* Optional: Add some styles to the footer if needed */

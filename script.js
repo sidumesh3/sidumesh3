@@ -1,21 +1,21 @@
-// Array of image slide elements
-const slides = document.querySelectorAll('.image-slide');
-let currentIndex = 0;
+let currentSlide = 0; // Start with the first image
 
-// Function to show the next image
-function showNextSlide() {
-    // Remove active class from the current slide
-    slides[currentIndex].classList.remove('active');
+const slides = document.querySelectorAll('.slide');
 
-    // Move to the next image in the array
-    currentIndex = (currentIndex + 1) % slides.length;
-
-    // Add active class to the next image
-    slides[currentIndex].classList.add('active');
+// Function to change the image
+function changeSlide() {
+    // Remove the active class from the current slide
+    slides[currentSlide].classList.remove('active');
+    
+    // Increment the slide index (loop back to 0 when reaching the end)
+    currentSlide = (currentSlide + 1) % slides.length;
+    
+    // Add the active class to the next slide
+    slides[currentSlide].classList.add('active');
 }
 
-// Initially show the first image
-slides[currentIndex].classList.add('active');
+// Initialize the first image as active
+slides[currentSlide].classList.add('active');
 
-// Set interval to switch slides every 3 seconds
-setInterval(showNextSlide, 3000);
+// Change the slide every time the user clicks on the screen
+document.body.addEventListener('click', changeSlide);
