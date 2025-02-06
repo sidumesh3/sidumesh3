@@ -1,74 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Siddhant Sancheti - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
 
+<body>
+    <!-- Hero Section -->
     <header>
-        <div class="container">
-            <h1>Siddhant Sancheti</h1>
-            <p><a href="mailto:siddhantsancheti5@gmail.com">siddhantsancheti5@gmail.com</a> | +1 (628) 306-2312</p>
-            <p><a href="https://www.linkedin.com/in/siddhantsancheti/" target="_blank">LinkedIn</a></p>
+        <div class="container hero">
+            <img src="your-image.jpg" alt="Siddhant Sancheti" class="hero-image">
+            <div class="hero-text">
+                <h1>Siddhant Sancheti</h1>
+                <p><a href="mailto:siddhantsancheti5@gmail.com">siddhantsancheti5@gmail.com</a> | +1 (628) 306-2312</p>
+                <p><a href="https://www.linkedin.com/in/siddhantsancheti/" target="_blank">LinkedIn</a> | <a
+                        href="https://github.com/sidumesh3" target="_blank">GitHub</a></p>
+            </div>
         </div>
     </header>
 
-    <section class="education">
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
+    </nav>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
         <h2>Education</h2>
-        <div class="education-item">
+        <div class="card">
             <h3>University of San Francisco</h3>
             <p>Master's in Entrepreneurship and Innovation, May 2025</p>
             <p>3.6/4.0 GPA</p>
-            <p>Relevant Coursework: Finance, Accounting, Business Analytics</p>
         </div>
-        <div class="education-item">
+        <div class="card">
             <h3>The LNM Institute of Information Technology</h3>
             <p>Bachelor of Technology in Mechanical Engineering, June 2022</p>
-            <p>Extracurriculars: Event Finance Head of ASME EFx</p>
         </div>
     </section>
 
-    <section class="experience">
+    <!-- Experience Section -->
+    <section id="experience" class="section">
         <h2>Experience</h2>
-        <div class="experience-item">
+        <div class="card">
             <h3>Product Manager Intern - Stealth Startup (Nuff Cash)</h3>
             <p>January 2025 – Present</p>
             <ul>
                 <li>Led strategic planning and business roadmap development.</li>
                 <li>Developed financial models optimizing pricing by 10%.</li>
-                <li>Transformed financial insights into actionable strategies.</li>
             </ul>
         </div>
-        <div class="experience-item">
+        <div class="card">
             <h3>Product Strategy Consultant - Malloy Group</h3>
             <p>November 2024 – Present</p>
             <ul>
                 <li>Researched market strategies for sustainable startup.</li>
-                <li>Reduced product costs by 5% for stronger market positioning.</li>
-            </ul>
-        </div>
-        <div class="experience-item">
-            <h3>Co-Founder, VP Finance - Product Club, USF</h3>
-            <p>September 2024 – Present</p>
-            <ul>
-                <li>Founded a club to increase awareness of product management.</li>
-                <li>Managed the club's $5,000 financial budget for operations.</li>
             </ul>
         </div>
     </section>
 
-    <section class="skills">
+    <!-- Skills Section -->
+    <section id="skills" class="section">
         <h2>Skills</h2>
-        <p>MS Excel, Word, PowerPoint, SEO, Generative AI, Yardi, SQL, Jira, Notion, Canva, QuickBooks, Tally ERP</p>
+        <ul>
+            <li>MS Excel, Word, PowerPoint</li>
+            <li>SEO, Generative AI</li>
+            <li>SQL, Jira, Notion, Canva</li>
+        </ul>
     </section>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2025 Siddhant Sancheti. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
