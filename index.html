@@ -10,14 +10,11 @@ overflow: hidden; border-radius: 8px;">
 </div>
 
 <style>
-  /* Hide Canva branding and UI elements */
-  a[href*="canva.com"], div[style*="canva.com"], iframe + div {
+  /* Hide Canva pagination and UI controls */
+  iframe + div, 
+  a[href*="canva.com"], 
+  div[style*="canva.com"] {
     display: none !important;
     visibility: hidden !important;
-  }
-
-  /* Hide scrollbars */
-  iframe::-webkit-scrollbar {
-    display: none;
   }
 </style>
