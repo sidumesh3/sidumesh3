@@ -10,11 +10,23 @@ overflow: hidden; border-radius: 8px;">
 </div>
 
 <style>
-  /* Hide Canva pagination and UI controls */
-  iframe + div, 
-  a[href*="canva.com"], 
-  div[style*="canva.com"] {
+  /* Force hide Canva navigation controls */
+  iframe + div,
+  div[style*="canva.com"],
+  a[href*="canva.com"] {
     display: none !important;
     visibility: hidden !important;
   }
 </style>
+
+<script>
+  // Wait for the page to load
+  window.addEventListener("load", function () {
+    // Find and hide Canva's navigation elements
+    const iframeControls = document.querySelectorAll('iframe + div, div[style*="canva.com"]');
+    iframeControls.forEach(element => {
+      element.style.display = "none";
+      element.style.visibility = "hidden";
+    });
+  });
+</script>
