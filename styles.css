@@ -1,0 +1,98 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #f0f4f8, #e0e6ed); /* Gradient Background */
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: #2c3e50; /* Darker text for headers */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1em;
+  text-align: justify; /* Aligning text for paragraphs */
+  margin-bottom: 20px;
+  color: #555; /* Lighter text color */
+}
+
+a {
+  color: #3498db; /* Link color */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Section Styling */
+section {
+  margin: 50px 0;
+}
+
+/* Button Styling */
+button {
+  background-color: #3498db; /* Modern button color */
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9; /* Hover effect */
+}
+
+/* Card / Container */
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+.card img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.card h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #2c3e50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  button {
+    padding: 12px 20px;
+  }
+
+  .card {
+    margin: 10px;
+  }
+}
